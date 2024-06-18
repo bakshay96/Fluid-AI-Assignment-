@@ -58,7 +58,7 @@ Make sure you have the following installed:
 
 2. **Navigate to the project directory**:
    ```sh
-   cd movie-flix
+   cd moviflix
 
 ## Setting Up Project in local
 
