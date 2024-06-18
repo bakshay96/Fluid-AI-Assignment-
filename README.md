@@ -3,11 +3,21 @@
 
 Welcome to **Movie Flix**, your go-to web application for searching movies. This application allows users to search for movies by their name and offers filtering and sorting options to enhance the search experience. Dive into the details of your favorite movies with just a click!
 
+# Objective
+   Create a basic prototype of a movie search web application using React.js. The prototype should demonstrate the ability to fetch movie data from an external API and          display it in a simple user interface.
+
+ 
+## Submission Guidelines:
+- Display a list of popular movies by default.
+- Display a list of popular movies by default.
+- Implement the ability to fetch movie data from the OMDB API (http://www.omdbapi.com/) or any other movie database API of your choice.
+- Display search results in a basic format, including movie titles and release years.
+- When users click on a movie title from the search results, display a modal with additional details about the selected movie, such as plot summary, genre, and ratings.
 ## 🚀 Features
 
 - **Search Functionality**: Find movies by entering their name.
 - **IMDB API Integration**: Leverage the power of the IMDB API to fetch accurate and comprehensive movie data.
-- **Filter and Sort**: Refine your search results with filtering options and sort them by name or year.
+[- **Filter and Sort**: Refine your search results with filtering options and sort them by name or year.](url)
 - **Detailed Movie Pages**: Click on any movie card to be redirected to a detailed page with more information about the movie.
 
 ## 🛠️ Tech Stack
@@ -46,38 +56,46 @@ Make sure you have the following installed:
    ```sh
    git clone https://github.com/bakshay96/Fluid-AI-Assignment-.git
 
-2. **Navigate to the project directory**
-    '''sh
-    cd movie-flix
+2. **Navigate to the project directory**:
+   ```sh
+   cd movie-flix
 
-3. **Install the dependencies**
-    '''sh
-    npm install 
+## Setting Up Project in local
 
-4. ** Run application**
-    ''sh
-    npm run dev
+### Frontend
 
-The application will be available at http://localhost:3000.
-The application will be available at http://localhost:3000.
+#### 1) Setting up node environment
 
-🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+    1) navigate to the Frontend directory
+    2) use node version 16 or 18.12.1 is recommended
+    3) run the command npm install or npm i --legacy-peer-deps it will install all the required Dependencies with no errors.
 
-Fork the Project.
-Create your Feature Branch (git checkout -b feature/AmazingFeature).
-Commit your Changes (git commit -m 'Add some AmazingFeature').
-Push to the Branch (git push origin feature/AmazingFeature).
-Open a Pull Request.
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+#### 2) Starting frontend on localhost
 
-📬 Contact
-If you have any questions or feedback, please reach out to us:
+(make sure you are confirming the URL of the server)
 
-Email: bombatkarakshay11@gmail.com
+    npm dev /*or*/ npm run dev
 
-GitHub: https://github.com/bakshay96/
+#### 3) Making a Production-ready folder
+
+    npm run build
+
+
+ ### Tools used on this project
+
+- Visual Studio Code
+- Vite-JS template
+- Netlify for frontend deployment
+
+<br />
+
+  ## Contact
+
+If you want to contact me, you can reach me through the below handles. <br />
+
+
+[![linkedin](https://img.shields.io/badge/Akshay_Bombatkar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/akshayb-profile)
+[![GitHub](https://img.shields.io/badge/Akshay_Bombatkar-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/bakshay96)
 
 Thank you for using Movie Flix! We hope you enjoy discovering movies as much as we enjoyed building this application.
 
