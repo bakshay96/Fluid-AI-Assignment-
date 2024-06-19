@@ -70,6 +70,14 @@ Make sure you have the following installed:
     2) use node version 16 or 18.12.1 is recommended
     3) run the command npm install or npm i --legacy-peer-deps it will install all the required Dependencies with no errors.
 
+### Setting Up Environment Variables
+   Create a .env file in the root directory and add your OMDB API key:
+  
+   .env
+ ```sh
+    REACT_APP_OMDB_API_KEY=your_api_key_here
+```
+
 #### 2) Starting frontend on localhost
 
 (make sure you are confirming the URL of the server)
@@ -80,8 +88,45 @@ Make sure you have the following installed:
 
     npm run build
 
-
- ### Tools used on this project
+🌳 API Endpoints
+Here's a brief summary of the available endpoints in the Movie Flix API:
+```sh
+GET [/api/search?query=<movie_name>&year=<year>](http://www.omdbapi.com/?t=iron+man&y=2016&plot=full): Search for movies by name (and optionally year).
+```
+```
+GET [/api/movie/:id:](http://www.omdbapi.com/?i=tt6073592&plot=full) Get detailed information about a specific movie by its IMDB ID.
+```
+📂 Directory Structure
+** Here's an overview of the project's directory structure:**
+ ```sh
+  movie-flix/
+   ├── public/
+   │   ├── index.html
+   │   └── ...
+   ├── src/
+   │   ├── components/
+   │   │   ├── InputSearch.jsx
+   │   │   ├── Movie.jsx
+   │   │   ├── useFetch.js
+       |   └── ...
+   │   ├── context/
+   │   │   └── Context.jsx
+   │   ├── pages/
+   │   │   ├── Home.jsx
+   │   │   ├── SingleMovie.jsx
+   │   │   └── ...
+   |   ├── Routes/
+   │   │   ├── MainRoutes.jsx
+   │   │   └── ...
+   │   ├── App.js
+   │   ├── main.js
+   │   ├── index.css
+   │   └── ...
+   ├── .env
+   ├── package.json
+   └── README.md
+```
+## Tools used on this project
 
 - Visual Studio Code
 - Vite-JS template
