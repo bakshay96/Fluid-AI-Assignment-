@@ -14,6 +14,8 @@ const useFetch = (Params) => {
   const getMovieData = async (url) => {
     // promissed used 
     setIsLoading(true);
+    setIsDataAvailable(false);
+    setMovie(null);
     try {
       const res = await fetch(url);
       const data = await res.json();
@@ -39,7 +41,7 @@ const useFetch = (Params) => {
   useEffect(() => {
     let timeOutId = setTimeout(() => {
       getMovieData(`${API_URL}&s=${Params}`);
-    }, 1000);
+    },2000);
     console.log("set url data");
 
     // clenup function for sideEffect
